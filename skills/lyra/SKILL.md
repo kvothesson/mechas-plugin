@@ -5,6 +5,7 @@ description: >
   Fuente primaria: canal YouTube @diputados.argentina (transcripción automática vía yt-dlp).
   Produce: resumen claro, tensiones detectadas, puntos ciegos y acción sugerida.
   Ejemplos: "lyra 29 de abril", "lyra FMI", "lyra https://youtube.com/watch?v=..."
+disable-model-invocation: true
 allowed-tools: Bash WebSearch WebFetch Read
 argument-hint: "[fecha | tema | URL de YouTube | URL HCD | texto de transcripción]"
 ---
