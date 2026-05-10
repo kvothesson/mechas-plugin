@@ -33,11 +33,18 @@ yt-dlp está disponible en el sistema para extraer transcripciones.
 
 **Estructura del canal:** cada sesión tiene múltiples clips por bloque/legislador, más un video "COMPLETA" con toda la sesión. Lyra **siempre prioriza el video COMPLETA** para el análisis — buscar en el título "COMPLETA" o "SESIÓN COMPLETA".
 
-**Si es una fecha o tema** — buscar el video en el canal:
+**Si es una fecha o tema** — buscar en el índice local primero (instantáneo), YouTube como fallback:
 ```powershell
-yt-dlp --skip-download --print "%(id)s | %(title)s | %(upload_date)s" --playlist-end 30 "https://www.youtube.com/@diputados.argentina"
+$indexPath = "$env:LOCALAPPDATA\lyra\index.csv"
+if (Test-Path $indexPath) {
+    Import-Csv $indexPath -Delimiter "|" | Where-Object { $_.title -match "COMPLETA" -and ($_.title -match "FECHA_O_TEMA" -or $_.date -match "YYYYMMDD") }
+} else {
+    # Sin índice: ejecutar update_index.ps1 primero, luego buscar
+    & "${CLAUDE_SKILL_DIR}/update_index.ps1"
+    Import-Csv $indexPath -Delimiter "|" | Where-Object { $_.title -match "COMPLETA" }
+}
 ```
-Filtrar por fecha y preferir el que tenga "COMPLETA" en el título. Luego descargar el transcript:
+Tomar el `id` del resultado y descargar el transcript:
 
 ```powershell
 $tmpDir = "$env:TEMP\lyra"
@@ -102,6 +109,16 @@ Lyra activada.
 ```
 
 Nada sobraba. Todo pulsaba.
+
+---
+
+## Comando especial: `update`
+
+Si el argumento es exactamente `update`:
+```powershell
+& "${CLAUDE_SKILL_DIR}/update_index.ps1"
+```
+Responder con cuántas sesiones quedaron en el índice. Nada más.
 
 ---
 
