@@ -2,8 +2,10 @@ $indexDir = "$env:LOCALAPPDATA\lyra"
 $indexPath = "$indexDir\index.csv"
 New-Item -ItemType Directory -Force -Path $indexDir | Out-Null
 
-$entries = yt-dlp --skip-download --print "%(id)s|%(title)s|%(upload_date)s" --playlist-end 50 "https://www.youtube.com/@diputados.argentina" 2>$null |
-    Where-Object { $_ -match "^\w{11}\|" }
+$rawFile = "$indexDir\raw.tmp"
+yt-dlp --no-warnings --skip-download --print "%(id)s|%(title)s|%(upload_date)s" --playlist-end 50 "https://www.youtube.com/@diputados.argentina" > $rawFile
+$entries = Get-Content $rawFile -Encoding UTF8 | Where-Object { $_ -match "^\w{11}\|" }
+Remove-Item $rawFile -ErrorAction SilentlyContinue
 
 if ($entries) {
     "id|title|date" | Set-Content $indexPath -Encoding UTF8
