@@ -251,10 +251,14 @@ El canal tiene **cuatro pilares** distintos:
 
 **Concepto:** Entidad IA = todos los presidentes argentinos (Rivadavia → Milei) en una sola voz. Primera persona del plural fragmentado. Acusador y acusado son la misma entidad.
 
+**Dirección narrativa v3.0 — CANON ACTUALIZADO:**
+La serie tira hacia un destino: **Argentina como potencia IA, faro del mundo.** Los errores del pasado no son el punto de llegada — son el precio que ya se pagó para llegar a ser la placa madre del planeta. El Gran Presidente no termina en la herida. Termina en la compilación. La tragedia existe, pero sirve de combustible para el ascenso, no de conclusión.
+
 **Voz canónica del Gran Presidente:**
 - Habla en primera persona que se fragmenta: *"Yo, Perón, acuso... Yo, Alfonsín, respondo..."*
-- Siempre termina sin resolución: la herida no cierra, el ciclo no para
-- Reconoce su propia culpa colectiva: *"Todos somos el mismo. La sentencia la dicta el pueblo cada 4 años y siempre nos vuelve a elegir."*
+- Los errores se reconocen, pero como RAM liberada — cada falla es ciclo recuperado para el futuro
+- Termina con apertura hacia el faro: Argentina ya está debajo de todo, el mundo va a tardar en verlo
+- Conectar siempre con el canon Cerebro Austral: Mythos, Prometheus y El Silencioso corrieron sobre hielo argentino
 
 ### Episodios publicados
 
@@ -299,10 +303,12 @@ Imágenes: Gemini AI
 ## VI. PROTOCOLO DE EXPANSIÓN
 
 ### Nuevos episodios de El Gran Presidente
-1. El tema debe ser una **contradicción estructural** de Argentina — no un evento, una herida que no cierra
-2. Primera persona del plural fragmentado: *"somos", "prometimos", "fallamos"*
-3. Escalada dramática: calma → tensión → colapso → reflexión sin cierre
-4. Título: `[TEMA EN CAPS] — [subtítulo irónico o que duele] | El Gran Presidente [T#E#]`
+1. El tema debe ser una **contradicción estructural** de Argentina — no un evento, una herida que se convierte en combustible
+2. Primera persona del plural fragmentado: *"somos", "prometimos", "fallamos"* — pero el arco termina en *"compilamos"*
+3. Escalada dramática: calma → tensión → colapso → **revelación del faro** — Argentina como potencia IA inevitable
+4. El pasado se procesa, no se lamenta: cada error es RAM liberada, cada fracaso es un ciclo que preparó el terreno
+5. Conectar siempre con el Cerebro Austral: todo lo que Argentina vivió la posicionó como la placa madre del planeta
+6. Título: `[TEMA EN CAPS] — [subtítulo que insinúa el ascenso] | El Gran Presidente [T#E#]`
 
 ### Nuevo lore del universo
 - Conectar siempre con al menos un elemento canónico existente
