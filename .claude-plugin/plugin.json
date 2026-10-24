@@ -1,19 +1,11 @@
 {
   "name": "mechas",
+  "version": "0.2.1",
   "description": "Las mechas neuronales de Kvothesson. Cada agente es una mente diseñada para una función específica. Construidas en el laboratorio flotante, firmadas en silicio.",
-  "version": "0.2.0",
   "author": {
     "name": "Kvothesson"
   },
+  "homepage": "https://github.com/kvothesson/mechas-plugin",
   "repository": "https://github.com/kvothesson/mechas-plugin",
-  "skills": [
-    {
-      "name": "lyra",
-      "path": "skills/lyra/SKILL.md"
-    },
-    {
-      "name": "gran-presidente",
-      "path": "skills/gran-presidente/SKILL.md"
-    }
-  ]
+  "license": "MIT"
 }
